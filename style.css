@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+.c-site-header {
+  height: 31.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f1f2;
+  padding: 2.6875rem;
+  color: #082423;
+}
+
+.c-site-header h1 {
+  font-size: 4.1875rem;
+  line-height: 6.25rem;
+}
+
+.achievements-container {
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 28rem;
+}
+
+.circles-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  height: 10.25rem;
+  width: 10.25rem;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: #f2f6f6;
+  position: relative;
+}
+
+.circle h1 {
+  color: #f26440;
+  font-size: 3.75rem;
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  font-weight: 700;
+}
+
+.circle i {
+  color: #f26440;
+  font-size: 3.75rem;
+  position: absolute;
+  top: 2rem;
+  left: 2.7rem;
+}
+
+.circle h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #082423;
+  position: absolute;
+  top: 6rem;
+  left: 2.75rem;
+}
+
+.view-container {
+  height: 30rem;
+  padding: 2.6875rem;
+  position: relative;
+}
+
+.portfolio-circle {
+  position: absolute;
+  top: 7rem;
+  z-index: 2;
+  background: #f26440;
+  height: 9.375rem;
+  width: 9.375rem;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio-circle a {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.project-circle {
+  position: absolute;
+  bottom: 3rem;
+  right: 2.6875rem;
+  width: 19.25rem;
+  height: 19.25rem;
+  border-radius: 50%;
+  background: #286f6c;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-circle :first-child {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.project-circle :last-child {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.video-container {
+  padding: 2.6875rem;
+}

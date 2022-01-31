@@ -50,6 +50,7 @@ a:active {
 .circles-container {
   display: flex;
   justify-content: space-between;
+  max-width: 40rem;
 }
 
 .circle {
@@ -96,6 +97,7 @@ a:active {
 .portfolio-circle {
   position: absolute;
   top: 7rem;
+  left: 2.6875rem;
   z-index: 2;
   background: #f26440;
   height: 9.375rem;
@@ -116,7 +118,7 @@ a:active {
 .project-circle {
   position: absolute;
   bottom: 3rem;
-  right: 2.6875rem;
+  left: 5rem;
   width: 19.25rem;
   height: 19.25rem;
   border-radius: 50%;
@@ -140,4 +142,128 @@ a:active {
 
 .video-container {
   padding: 2.6875rem;
+  color: #082423;
+}
+.video {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  background-color: #f8f1f2;
+  border-radius: 4px;
+}
+video {
+  width: 18rem;
+  object-fit: contain;
+}
+.info-container {
+  background-color: #286f6c;
+  height: 28.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 2.6875rem;
+  padding-right: 2.6875rem;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+}
+.info-container h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 3.4375rem;
+}
+.info-container p {
+  font-size: 1.125rem;
+  line-height: 1.8125rem;
+  font-weight: 400;
+  max-width: 30rem;
+}
+.project-cards {
+  padding: 2.6875rem;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-70%);
+  max-width: 35rem;
+}
+.card {
+  width: 10.5625rem;
+  height: 12.25rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 0.95rem;
+}
+
+.card img {
+  width: 8.6875rem;
+  height: 8.6875rem;
+  object-fit: contain;
+}
+.card h4 {
+  font-size: 1rem;
+  line-height: 1.8125rem;
+  font-weight: 700;
+  color: #082423;
+}
+
+.contact {
+  height: 25rem;
+  color: #082423;
+  padding: 2.6875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  bottom: 10rem;
+}
+
+.contact h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.contact p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.message {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.message :first-child {
+  z-index: 2;
+}
+.orange-cirlce {
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-color: #f26440;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 5.6rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.6875rem;
+  align-items: center;
+  background-color: #082423;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10rem;
+}
+.l1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

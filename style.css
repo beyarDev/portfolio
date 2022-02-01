@@ -23,18 +23,27 @@ a:active {
   text-decoration: inherit;
   font-weight: inherit;
 }
-
 .c-site-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f1f2;
+}
+.c-site-header img {
+  width: 25rem;
+  height: 30rem;
+  padding-right: 5rem;
+  padding-bottom: 0rem;
+  display: none;
+}
+.d-site-header {
   height: 31.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #f8f1f2;
   padding: 2.6875rem;
   color: #082423;
 }
-
-.c-site-header h1 {
+.d-site-header h1 {
   font-size: 4.1875rem;
   line-height: 6.25rem;
 }
@@ -182,7 +191,7 @@ video {
   padding: 2.6875rem;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-70%);
+  transform: translateY(-65%);
   max-width: 35rem;
 }
 .card {
@@ -207,14 +216,14 @@ video {
 }
 
 .contact {
-  height: 25rem;
+  height: 20rem;
   color: #082423;
   padding: 2.6875rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  bottom: 10rem;
+  bottom: 7rem;
 }
 
 .contact h2 {
@@ -271,6 +280,61 @@ footer {
   display: flex;
   align-items: center;
 }
-.l2 p{
+.l2 p {
   margin-left: 1rem;
+}
+
+@media (min-width: 900px) {
+  .c-site-header img {
+    display: block;
+  }
+  .p-circle {
+    position: relative;
+    left: 15rem;
+  }
+  main {
+    position: relative;
+  }
+  #info {
+    position: absolute;
+    top: 27rem;
+    right: 3rem;
+    width: 28rem;
+  }
+  .info-container {
+    background-color: white;
+    color: #082423;
+  }
+  .contact {
+    position: absolute;
+    right: 3rem;
+    bottom: 1rem;
+    width: 28rem;
+  }
+}
+@media (min-width: 1430px) {
+  #info {
+    top: 0.5rem;
+    height: 35rem;
+    right: 0;
+  }
+  .info-container {
+    height: inherit;
+  }
+  .view-container {
+    position: relative;
+    left: 8rem;
+    bottom: 8rem;
+  }
+  .contact {
+    bottom: 0.5rem;
+    right: 0rem;
+  }
+  .video-container {
+    position: absolute;
+    top: 38rem;
+    left: 35rem;
+    color: #7b8692;
+    display: none;
+  }
 }

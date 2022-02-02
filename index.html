@@ -12,6 +12,13 @@
     <header class="c-site-header">
       <div class="d-site-header">
         <div><span>Beyar</span><span style="color: #f26440">.com</span></div>
+        <nav aria-label="Main Site Links.">
+          <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#info">About Me</a></li>
+            <li><a href="#links">Contact</a></li>
+          </ul>
+        </nav>
         <div style="display: flex; align-items: center; float: left">
           <span
             style="
@@ -28,7 +35,7 @@
       </div>
       <img src="./Beyar.png" alt="my photo" />
     </header>
-    <main>
+    <main id="main">
       <div class="achievements-container">
         <div class="circles-container">
           <div class="circle p-circle">
@@ -57,13 +64,13 @@
         </div>
         <div class="project-circle">
           <a href="#">View last</a>
-          <a href="#">Project</a>
+          <a href="#" tabindex="1">Project</a>
         </div>
       </div>
       <div class="video-container">
         <h2>Why Programming Is Important?</h2>
         <div class="video">
-          <video src="coding.mp4" controls poster="./posture.PNG"></video>
+          <video src="coding.mp4" controls></video>
         </div>
       </div>
       <div id="info">
@@ -86,7 +93,7 @@
           </div>
         </div>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact">
         <h2>Ready to get in touch?</h2>
         <p>You now have an idea about me, let’s talk about you!</p>
         <div class="message">
@@ -99,7 +106,7 @@
       <div class="info l1">
         <a href="#">About</a><a href="#">Projects</a><a href="#">Contact</a>
       </div>
-      <div class="info l2">
+      <div class="info l2" id="links">
         <a href="https://github.com/beyar88" target="blank"
           ><i class="fab fa-3x fa-github-alt"></i>
           <p>/beyar88</p></a

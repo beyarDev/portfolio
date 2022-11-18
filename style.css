@@ -47,9 +47,11 @@ li:hover {
   padding-bottom: 0rem;
   display: none;
   object-fit: cover;
+  position: relative;
+  top: 1.25rem;
 }
 .d-site-header {
-  height: 31.5rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,7 +59,7 @@ li:hover {
   color: #082423;
 }
 .d-site-header h1 {
-  font-size: 3rem;
+  font-size: 1.50rem;
   line-height: 6.25rem;
 }
 
@@ -66,7 +68,7 @@ li:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 28rem;
+  height: 25rem;
 }
 
 .circles-container {
@@ -76,43 +78,40 @@ li:hover {
 }
 
 .circle {
-  height: 10.25rem;
-  width: 10.25rem;
+  height: 7.25rem;
+  width: 7.25rem;
   flex-direction: column;
   border-radius: 50%;
   background-color: #f2f6f6;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.circle h1 {
+.circle h4 {
   color: #f26440;
-  font-size: 3.75rem;
-  position: absolute;
-  top: 2rem;
-  left: 4rem;
+  font-size: 2.25rem;
   font-weight: 700;
 }
 
 .circle i {
   color: #f26440;
-  font-size: 3.75rem;
-  position: absolute;
-  top: 2rem;
-  left: 2.7rem;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .circle span {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #082423;
-  position: absolute;
-  top: 6rem;
-  left: 2.75rem;
+  font-weight: bold;
 }
 
 .view-container {
   height: 30rem;
-  padding: 2.6875rem;
+  padding: 1.6875rem;
   position: relative;
 }
 
@@ -140,7 +139,7 @@ li:hover {
 .project-circle {
   position: absolute;
   bottom: 3rem;
-  left: 5rem;
+  left: 1rem;
   width: 19.25rem;
   height: 19.25rem;
   border-radius: 50%;
@@ -165,9 +164,13 @@ li:hover {
 .video-container {
   padding: 2.6875rem;
   color: #082423;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .video {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
   width: 20rem;
   background-color: #f8f1f2;
@@ -189,6 +192,7 @@ video {
   padding-bottom: 10rem;
   padding-top: 2rem;
 }
+
 .info-container h2 {
   font-size: 2.25rem;
   font-weight: 700;
@@ -201,11 +205,10 @@ video {
   max-width: 30rem;
 }
 .project-cards {
-  padding: 2.6875rem;
-  display: flex;
-  justify-content: space-between;
   transform: translateY(-65%);
   max-width: 35rem;
+  display: flex;
+  justify-content: space-around;
 }
 .card {
   width: 10.5625rem;
@@ -236,7 +239,7 @@ video {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  bottom: 7rem;
+  bottom: 4rem;
 }
 
 .contact h2 {
@@ -279,15 +282,13 @@ footer {
   font-size: 1.125rem;
   font-weight: 400;
 }
-.info {
+.l1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 10rem;
-}
-.l1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .l2 a {
   display: flex;
@@ -298,16 +299,74 @@ footer {
 }
 
 @media (min-width: 900px) {
+  .d-site-header {
+    height: 31.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.6875rem;
+    color: #082423;
+  }
   .c-site-header img {
     display: block;
+  }
+  .d-site-header h1 {
+    font-size: 3rem;
+  }
+  .achievements-container {
+    height: 28rem;
+  }
+  .circle {
+    height: 10.25rem;
+    width: 10.25rem;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color: #f2f6f6;
+    position: relative;
+  }
+  
+  .circle h4 {
+    color: #f26440;
+    font-size: 3.75rem;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    font-weight: 700;
+  }
+  
+  .circle i {
+    color: #f26440;
+    font-size: 3.75rem;
+    position: absolute;
+    top: 2rem;
+    left: 2.7rem;
+  }
+  
+  .circle span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #082423;
+    position: absolute;
+    top: 6rem;
+    left: 2.75rem;
   }
   .p-circle {
     position: relative;
     left: 15rem;
   }
+  .view-container {
+    height: 30rem;
+    padding: 2.6875rem;
+    position: relative;
+  }
+  .project-cards {
+    padding: 2.6875rem;
+    justify-content: space-between;
+  }
   main {
     position: relative;
   }
+
   #info {
     position: absolute;
     top: 27rem;
@@ -367,4 +426,8 @@ footer {
     font-size: 4.1875rem;
   }
 }
+
+
 /* my .com and orange-circle original color  #f26440; */
+
+

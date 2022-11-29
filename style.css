@@ -51,7 +51,7 @@ li:hover {
   top: 1.25rem;
 }
 .d-site-header {
-  height: 25rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,7 +60,6 @@ li:hover {
 }
 .d-site-header h1 {
   font-size: 1.50rem;
-  line-height: 6.25rem;
 }
 
 .achievements-container {
@@ -139,7 +138,7 @@ li:hover {
 .project-circle {
   position: absolute;
   bottom: 3rem;
-  left: 1rem;
+  left: 1.75rem;
   width: 19.25rem;
   height: 19.25rem;
   border-radius: 50%;
@@ -147,8 +146,9 @@ li:hover {
   text-align: center;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 .project-circle :first-child {
@@ -224,7 +224,7 @@ video {
   height: 8.6875rem;
   object-fit: contain;
 }
-.card a {
+.card span {
   font-size: 1rem;
   line-height: 1.8125rem;
   font-weight: 700;
@@ -313,6 +313,7 @@ footer {
   }
   .d-site-header h1 {
     font-size: 3rem;
+    line-height: 6.25rem;
   }
   .achievements-container {
     height: 28rem;
